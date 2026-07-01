@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.login-container, .profile-container, .loading-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form, .profile-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h1, .profile-card h1 {
+  margin-bottom: .5rem;
+  color: #333;
+}
+
+.login-form  p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: .4rem;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  padding: .9rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border-color: #2563eb;
+}
+
+.login-form .error-message {
+  color: crimson;
+  margin-top: .35rem;
+  font-size: .9rem;
+}
+
+button {
+  width: 100%;
+  padding: .9rem;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+button:disabled {
+  opacity: .7;
+  cursor: not-allowed;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #2563eb;
+}
+
+.username {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.profile-info {
+  text-align: left;
+  margin: 1.5rem 0;
+}
+
+.profile-info p {
+  margin-bottom: .8rem;
+  color: #444;
+}
+
+.logout-btn {
+  background: crimson;
+}
+
+.logout-btn:hover {
+  background: #b91c1c;
+}
+
+
+.loading-screen h2 {
+  color: #2563eb;
+}
+
+
+
+@media (max-width: 500px) {
+  .login-form, .profile-card {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .profile-image {
+    width: 110px;
+    height: 110px;
+  }
+}
